@@ -17,3 +17,8 @@
 - Using random generator from rand crate (use rand:Rng)
 - Then using thread_rng function will generate a random number and then gen_range is the range
 
+### Time to compare
+
+- Using std::cmp::Ordering (Less, Greater or Equal Enum) to compare 2 values
+- using match to check the values between 2 variables and reference to the secret_number
+- parsing string to 32 bit int
