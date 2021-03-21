@@ -3,6 +3,13 @@
 ## Details
 
 - Learning how to code in Rust by building a simple guessing game. 
+- Rust commands and file structure:
+    - Install rust
+    - cargo new name_of_app
+    - cargo build (to build app)
+    - then use ./target/app_name to run it or
+    - cargo run (build and run app)
+    - all files in src folder
 
 ### Start
 
