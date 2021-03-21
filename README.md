@@ -28,4 +28,9 @@
 
 - Using std::cmp::Ordering (Less, Greater or Equal Enum) to compare 2 values
 - using match to check the values between 2 variables and reference to the secret_number
-- parsing string to 32 bit int
+- parsing string to unsigned 32 bit int
+
+### Time to loop
+
+- Using loop keyword to loop
+- break, breaks out of the loop
