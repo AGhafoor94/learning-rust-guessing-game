@@ -34,3 +34,4 @@
 
 - Using loop keyword to loop
 - break, breaks out of the loop
+- Making program ignore non numbers (match the guess, if Ok(pass num) and return num, if Err(_) continue)

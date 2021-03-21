@@ -15,7 +15,10 @@ fn main() {
             .expect("Failed to read line");
 
         // Converting string to unsigned 32bit int by trimming, prasing. can use same variable to parse it.
-        let guess: u32 = guess.trim().parse().expect("Please type a number");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
         /*
             std::io can be above the function to import the namespace then can use io::stdin
             It is like C++ std etc. string argument needs to be mutable so answers can change
