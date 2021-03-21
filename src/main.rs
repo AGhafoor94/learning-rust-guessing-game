@@ -3,10 +3,10 @@ use rand::Rng;
 fn main() {
     // looping using loop
     let secret_number = rand::thread_rng().gen_range(1..101);
-    println!("Secret number {}", secret_number);
+    // println!("Secret number {}", secret_number);
+    println!("Guess the number game");
+    println!("Enter your guess");
     loop {
-        println!("Guess the number game");
-        println!("Enter your guess");
         // mut makes the variable mutable
         let mut guess = String::new();
         // String::new() creates an empty instance of a string
@@ -27,8 +27,8 @@ fn main() {
             read_line returns a value in this case std::io::Result
         */
         match guess.cmp(&secret_number) {
-            std::cmp::Ordering::Less => println!("Too Low"),
-            std::cmp::Ordering::Greater => println!("Too High"),
+            std::cmp::Ordering::Less => println!("Too Low\n Enter a new Guess"),
+            std::cmp::Ordering::Greater => println!("Too High\n Enter a new Guess"),
             std::cmp::Ordering::Equal => {
                 println!("You Win");
                 break;
